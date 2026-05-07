@@ -1039,7 +1039,7 @@ export default function Home() {
                 </>
               ) : (
                 <>
-                  Continuar para Pagamento
+                  Continuar para Contrato
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </>
               )}
