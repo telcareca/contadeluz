@@ -1679,11 +1679,12 @@ export default function Home() {
       }`}>
         <div className="max-w-6xl mx-auto px-4 md:px-12 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <img
-              src="/logo.png"
-              alt="Economia Energy"
-              className={`h-11 w-auto object-contain ${step === 'home' ? 'brightness-0 invert' : ''}`}
-            />
+            <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${step === 'home' ? 'bg-white/20' : 'bg-emerald-100'}`}>
+              <Zap className={`w-5 h-5 ${step === 'home' ? 'text-yellow-300 fill-yellow-300' : 'text-emerald-600'}`} />
+            </div>
+            <span className={`text-xl font-bold tracking-tight ${step === 'home' ? 'text-white' : 'text-emerald-800'}`}>
+              Economia <span className={step === 'home' ? 'text-emerald-300' : 'text-emerald-500'}>Energy</span>
+            </span>
           </div>
 
           {step === 'home' ? (
@@ -1749,11 +1750,12 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <img
-                src="/logo.png"
-                alt="Economia Energy"
-                className="h-8 w-auto object-contain"
-              />
+              <div className="w-7 h-7 rounded-md bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center">
+                <Zap className="w-4 h-4 text-yellow-300" />
+              </div>
+              <span className="font-semibold text-emerald-800">
+                Economia Energy
+              </span>
             </div>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>Termos de Uso</span>

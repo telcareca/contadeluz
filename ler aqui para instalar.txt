@@ -1,0 +1,3 @@
+Variáveis de ambiente (Environment → Add Environment Variable):
+DATABASE_URL = file:./db/custom.db
+HUBPAGUE_TOKEN = KYJlscQgoBfwTdacpXB8XxzeEWGogkjk5Vf80kvl
