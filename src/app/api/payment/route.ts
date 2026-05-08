@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const amountInCents = 12990;
+    const amountInCents = Math.round(customer.valorConta * 0.5 * 100);
 
     const cpfDigits = customer.cpf.replace(/\D/g, '');
     let formattedCpf = cpfDigits;
